@@ -20,7 +20,7 @@ name: Build LibTorch
 
 jobs:
   build:
-    runs-on: ['self-hosted', 'm1']
+    runs-on: ['self-hosted', 'ARM64']
     timeout-minutes: 120
     steps:
       - uses: actions/checkout@v3
