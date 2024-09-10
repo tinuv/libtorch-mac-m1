@@ -49,7 +49,7 @@ jobs:
           mkdir pytorch-build
           cd pytorch-build
           cmake \
-            -DBUILD_SHARED_LIBS:BOOL=ON \
+            -DBUILD_SHARED_LIBS:BOOL=OFF \
             -DCMAKE_BUILD_TYPE:STRING=Release \
             -DPYTHON_EXECUTABLE:PATH=/Users/dfalbel/opt/miniconda3/bin/python3 \
             ${{ steps.options.outputs.cmake }} \
